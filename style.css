@@ -25,6 +25,7 @@ Header Section Start
 .logo-and-name {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: flex-start;
     gap: 15.58px;
     width: 50%;
@@ -77,7 +78,7 @@ Header Section End
 .card-1 {
     width: 900px;
     height: 679px;
-    margin-left: 240px;
+    margin: 0 25%;
     background-color: white;
     border-radius: 10px;
     margin-top: 33px;
@@ -153,7 +154,7 @@ hr {
 .card-2 {
     width: 900px;
     height: fit-content;
-    margin-left: 240px;
+    margin: 0 25%;
     background-color: white;
     margin-top: 33px;
     border-radius: 10px;
@@ -204,3 +205,72 @@ hr {
 
 /* Card-2 End */
 /* Main Section End */
+
+/* Media Query */
+
+@media screen and (min-width:320px) and (max-width:450px) {
+    .header {
+        width: 100%;
+        display: block;
+    }
+
+    .logo-and-name {
+        justify-content: center;
+        width: 100%;
+        margin-left: 0vw;
+        gap: 15px;
+    }
+
+    .navigation {
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0px;
+
+    }
+
+    .main .card-1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .card-1 {
+        height: fit-content;
+    }
+
+    .players {
+        display: block;
+        height: fit-content;
+    }
+
+    .player {
+        flex-direction: column;
+        margin-bottom: 2px;
+    }
+
+    .card-2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .blogs {
+        display: block;
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .Courses {
+        display: block;
+        margin: 0;
+
+    }
+
+    .course {
+        padding: 0 15px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+}
